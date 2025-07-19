@@ -1,19 +1,20 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import QueuePage from './pages/QueuePage';
 import PrivateRoute from './components/PrivateRoute';
+import './App.css';
 
 function App() {
-  const [auth, setAuth] = useState(!!localStorage.getItem('token'));
-
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/login" element={<Login setAuth={setAuth} />} />
-        <Route path="/" element={<PrivateRoute>{<Dashboard setAuth={setAuth} />}</PrivateRoute>} />
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+        <Route path="/queue/:queueId" element={<PrivateRoute><QueuePage /></PrivateRoute>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
