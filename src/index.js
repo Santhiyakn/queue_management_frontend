@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 =======
 import './index.css';
+=======
+>>>>>>> fcae520 (Initial commit)
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+<<<<<<< HEAD
 root.render(
   <React.StrictMode>
     <App />
@@ -22,3 +26,6 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 >>>>>>> 3d27a8a (Initialize project using Create React App)
+=======
+root.render(<App />);
+>>>>>>> fcae520 (Initial commit)

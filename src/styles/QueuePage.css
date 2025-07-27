@@ -1,0 +1,58 @@
+/* QueuePage.css */
+.queue-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+.queue-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.queue-container input {
+  padding: 10px;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.queue-container button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.queue-container button:hover {
+  background-color: #0056b3;
+}
+
+.queue-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.queue-container li {
+  padding: 12px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.queue-container li span {
+  flex: 1;
+}
